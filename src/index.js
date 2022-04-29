@@ -3,14 +3,24 @@ import ReactDOM from 'react-dom/client';
 import './input.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { Provider } from 'react-redux';
+import { BrowserRouter } from 'react-router-dom';
+import { PersistGate } from 'redux-persist/integration/react';
+import { store, persistor } from './core/redux/store';
 import { ChakraProvider } from '@chakra-ui/react';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <ChakraProvider>
-      <App />
-    </ChakraProvider>
+    <BrowserRouter>
+      <PersistGate loading={null} persistor={persistor}>
+        <Provider store={store}>
+          <ChakraProvider>
+            <App />
+          </ChakraProvider>
+        </Provider>
+      </PersistGate>
+    </BrowserRouter>
   </React.StrictMode>,
 );
 
