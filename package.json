@@ -1,4 +1,5 @@
 {
+  "homepage": "https://aevi1103.github.io/hanap-buhay",
   "name": "hanap-buhay",
   "version": "0.1.0",
   "private": true,
@@ -11,6 +12,7 @@
     "@testing-library/react": "^13.1.1",
     "@testing-library/user-event": "^13.5.0",
     "framer-motion": "^6.3.3",
+    "gh-pages": "^3.2.3",
     "localforage": "^1.10.0",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
@@ -24,6 +26,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "watch-css": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
     "format": "npx prettier --write .",
