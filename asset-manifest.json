@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/hanap-buhay/static/css/main.458e70ef.css",
+    "main.js": "/hanap-buhay/static/js/main.f0d55f03.js",
+    "static/js/787.131e50ea.chunk.js": "/hanap-buhay/static/js/787.131e50ea.chunk.js",
+    "index.html": "/hanap-buhay/index.html",
+    "main.458e70ef.css.map": "/hanap-buhay/static/css/main.458e70ef.css.map",
+    "main.f0d55f03.js.map": "/hanap-buhay/static/js/main.f0d55f03.js.map",
+    "787.131e50ea.chunk.js.map": "/hanap-buhay/static/js/787.131e50ea.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.458e70ef.css",
+    "static/js/main.f0d55f03.js"
+  ]
+}
