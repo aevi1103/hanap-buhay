@@ -7,14 +7,21 @@ const App = () => {
   const element = useRoutes(routes);
   return (
     <Layout>
-      <nav>
-        <ul>
-          <li>
-            <NavLink to="/">Home</NavLink>
-          </li>
-          <li>
-            <NavLink to="/posting">Posting</NavLink>
-          </li>
+      <nav classsName="w-full flex items-center ">
+        <ul className="flex justify-between w-full px-20 py-5 drop-shadow border-bottom">
+          <p>Search...</p>
+
+          <div className="flex">
+            <li className="mx-2 text-slate-500 uppercase">
+              <NavLink to="/">Home</NavLink>
+            </li>
+            <li className="mx-2 text-slate-500 uppercase">
+              <NavLink to="/messages">Messages</NavLink>
+            </li>
+            <li className="mx-2 text-slate-500 uppercase">
+              <NavLink to="/profile">Profile </NavLink>
+            </li>
+          </div>
         </ul>
       </nav>
       <div>{element}</div>
